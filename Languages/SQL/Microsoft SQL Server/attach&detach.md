@@ -1,4 +1,5 @@
-# sp_attach_db (Transact-SQL) 附加数据库
+# Attach and Detach DataBase (分离和附加数据库)
+## sp_attach_db (Transact-SQL) 附加数据库
 ### Applies to: yesSQL Server (all supported versions)
  
 ### Important   
@@ -21,7 +22,7 @@ exec sp_attach_db [ @dbname= ] 'dbname'
 ```
 
 ---
-# sp_detach_db (Transact-SQL) 分离数据库
+## sp_detach_db (Transact-SQL) 分离数据库
 ### Applies to: SQL Server (all supported versions)
 
 ### Important
