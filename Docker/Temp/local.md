@@ -27,3 +27,7 @@ sftp>  put fakeovm.tar
 ```shell
 ~$ sudo docker load -i fakeovm.tar
 ```
+> ## 运行实例
+```shell
+~$ sudo docker run -d -p 8888:8888 7256b6240eb9
+```
