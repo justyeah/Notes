@@ -12,7 +12,7 @@
 > Download the latest VMware Workstation Pro or Player (or a beta version, if available).
 
 > Start the installation:
-```shell
+```shell {.line-numbers}
 # sh VMware-edition-version.release.architecture.bundle
 ```
 
@@ -29,6 +29,6 @@
 > <b>Note:</b> During the installation you will get an error about "No rc*.d style init script directories" being given. This can be safely ignored, since Arch uses systemd.
 
 * Tip: To (re)build the modules from terminal later on, use:
- ```shell
+ ```shell {.line-numbers}
  # vmware-modconfig --console --install-all
  ```

@@ -1,7 +1,7 @@
 # Web Api 跨域配置
 
 > ## 在services上添加
-```csharp
+```csharp {.line-numbers}
 // 跨域设置
 class AppSettings{
     public readonly static CorPolicyName = "PolicyName";

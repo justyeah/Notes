@@ -1,0 +1,1 @@
+解决办法：卸载Power Management相关的软件也不能解决，通过RegEdit搜索PWMTR64V.dll亦一无所获，在服务-启动中禁用相关程序依然没有效果。最后发现，在控制面板（Control Panel）中查找“计划任务”，将打开“任务计划程序”，在任务计划程序库中，打开Lenovo，将下面的“Lenovo Settings Power”禁用，问题得以解决。

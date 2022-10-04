@@ -1,7 +1,7 @@
 # Shrink SQL Server Log File (收缩日志文件)
 
 > SQL script
-```sql
+```sql {.line-numbers}
 --收缩2008 数据库日志
 0
 USE [master]  

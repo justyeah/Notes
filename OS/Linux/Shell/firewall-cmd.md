@@ -1,7 +1,7 @@
 # firewall-cmd (Linux 防火墙管理)
 
 * 查看firewall-cmd帮助
-```shell
+```shell {.line-numbers}
 [~]$ firewall-cmd --help
 
 Usage: firewall-cmd [OPTIONS...]
@@ -405,9 +405,14 @@ Panic Options
   --query-panic        Query whether panic mode is enabled
 ```
 > #### 新增端口
-``` shell
+``` shell {.line-numbers}
 ~/$ sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
 success
 ~/$ sudo firewall-cmd --reload
 success
+```
+>#### 实例一，添加SQL Server端口
+```shell {.line-numbers}
+~$ sudo firewall-cmd --zone=public --add-port=1433/tcp --permanent
+~$ sudo firewall-cmd --reload
 ```

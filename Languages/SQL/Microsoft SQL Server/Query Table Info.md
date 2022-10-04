@@ -1,6 +1,6 @@
 # Query Table Info (查询表信息)
 
-```sql
+```sql {.line-numbers}
 --表名!!!
 DECLARE @tableName NVARCHAR(MAX);
 SET @tableName = N'table name here!';
@@ -50,7 +50,7 @@ WHERE obj.name = @tableName --表名
 ORDER BY col.colorder;--col.colorder
 ```
 # List tables by their size in SQL Server database (查询表数据量)
-```sql
+```sql {.line-numbers}
 select schema_name(tab.schema_id) + '.' + tab.name as [table],
    cast(sum(spc.used_pages * 8)/1024.00 as numeric(36, 2)) as used_mb,
    cast(sum(spc.total_pages * 8)/1024.00 as numeric(36, 2)) as allocated_mb
@@ -65,7 +65,7 @@ group by schema_name(tab.schema_id) + '.' + tab.name
 order by sum(spc.used_pages) desc
 ```
 # SQL Server – Query to list table size and row counts (查询表大小和行数)
-```sql
+```sql {.line-numbers}
 /********************
     objects:
     sys.tables

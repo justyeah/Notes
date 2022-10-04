@@ -27,7 +27,7 @@
 
 > ##### This name-mapping convention applies to the following SQL Server ISO-compatible views.
 
-~~~
+~~~sql {.line-numbers}
 CHECK_CONSTRAINTS
 
 COLUMN_DOMAIN_USAGE

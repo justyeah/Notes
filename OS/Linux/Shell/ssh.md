@@ -11,7 +11,7 @@
 所以只需要手动生成这个locale文件即可！
 
 * 解决办法：
-```shell
+```shell {.line-numbers}
  ~# vim /etc/environment  #添加下面两行内容
  LANG="en_US.UTF-8"
  LC_ALL=
